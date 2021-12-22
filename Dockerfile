@@ -1,4 +1,3 @@
-FROM nginx:alpine
-MAINTAINER Jeferson Gonçalves
-
+FROM ngix:alpine
+LABEL author="Emanuel Rodrigues"
 COPY . /usr/share/nginx/html
