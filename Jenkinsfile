@@ -15,11 +15,5 @@ pipeline {
       }
     }
 
-    stage('Done') {
-      steps {
-        echo 'Test Completed'
-      }
-    }
-
   }
 }
