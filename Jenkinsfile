@@ -16,19 +16,8 @@ pipeline {
     }
 
     stage('Done') {
-      parallel {
-        stage('Done') {
-          steps {
-            echo 'Test Completed'
-          }
-        }
-
-        stage('Email check') {
-          steps {
-            mail(subject: '[Jenkins] Test Passed', body: 'O Script de test rodou com sucesso', from: 'manel_mr@alu.ufc.br', to: 'jeferson@alu.ufc.br', cc: 'thiagotharles@alu.ufc.br, monicayasmin@alu.ufc.br')
-          }
-        }
-
+      steps {
+        echo 'Test Completed'
       }
     }
 
