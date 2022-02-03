@@ -11,7 +11,7 @@ pipeline {
       steps {
         echo 'Running Test'
         sleep 5
-        build 'unicorn-test'
+        build(job: 'unicorn-test', propagate: true)
       }
     }
 
